@@ -1,0 +1,219 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: #000000;
+}
+/*---------------------navbar-------------------*/
+
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+.nav {
+  background: black;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+}
+.nav .nav-brand {
+  padding: 1rem 0;
+}
+.nav .mb-1 {
+  padding-top: 20px;
+}
+
+.nav span {
+  font-size: 4ch;
+}
+.nav .nav-menu {
+  justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+  font-size: 1.4rem;
+  color: gray;
+}
+
+.collapse {
+  height: 30rem;
+}
+.nav .nav-items {
+  display: flex;
+  margin: 0;
+}
+
+.nav .nav-items .nav-link {
+  padding: 1.6rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover {
+  background-color: pink;
+  transition: ease-in 0.3s;
+}
+
+.nav .nav-items .nav-link:hover a {
+  color: white;
+}
+
+.nav .nav-brand a {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  font-display: block;
+  font-size: 1.6rem;
+}
+
+.nav .social {
+  padding: 1.4rem 0rem;
+}
+
+.nav .social i {
+  padding: 0.2rem;
+}
+
+.nav .social i:hover {
+  color: pink;
+}
+/*---------x------------navbar---------x----------*/
+
+.container {
+  padding: 15px 9%;
+  padding-bottom: 100px;
+}
+
+.container .heading {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: #fff;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  font-size: 50px;
+}
+
+.container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+}
+
+.container .box-container .box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.403);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.container .box-container .box img {
+  height: 80px;
+}
+
+.container .box-container .box h3 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  padding: 10px 0;
+}
+
+.container .box-container .box p {
+  color: rgb(233, 233, 233);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.container .box-container .box .btn {
+  margin-top: 10px;
+  display: inline-block;
+  background: black;
+  color: white;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 8px 25px;
+}
+
+.container .box-container .box .btn:hover {
+  letter-spacing: 1px;
+}
+
+.container .box-container .box:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+  background-color: rgba(255, 255, 255, 0.527);
+}
+
+@media (max-width: 768px) {
+  .container {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .head ul {
+    flex-direction: column;
+  }
+
+  .nav .toggle-collapse {
+    display: initial;
+  }
+}
+
+.return:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.19);
+}
+
+.foot {
+  height: 75px;
+}
+
+.return {
+  left: 50%;
+  padding-top: 2vh;
+  text-align: center;
+  border: 1px solid #fff;
+  align-items: center;
+  padding: 10px 100px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease;
+  border-radius: 35px;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
